@@ -1,0 +1,186 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    /* margin: 0px; */
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card {
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    padding: 22px;
+
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    border-radius: 360px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+
+
+.name {
+    font-weight: 700;
+    font-size: 24px;
+    color: hsla(0, 0%, 100%, 0.719);
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+
+.naloc{
+    width: 100%;
+}
+
+
+.location {
+    font-size: 14px;
+    color: hsl(75, 94%, 57%);
+    margin-top: 8px;
+    text-align: center;
+
+}
+
+.job {
+    color: hsla(0, 0%, 71%, 0.952);
+    padding: 0px 10px;
+}
+
+.linkses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+
+.linkses a {
+    text-decoration: none;
+    color: hsla(0, 0%, 100%, 0.719);
+    background-color: hsl(0, 0%, 20%);
+    text-align: center;
+    padding: 8px 0px;
+    border-radius: 8px;
+    margin: 6px 0px;
+}
+
+.linkses a:hover{
+    background-color: hsl(0, 0%, 8%);
+    color: hsla(0, 0%, 100%, 0.904);
+
+}
+
+.attribution {
+    font-size: 13px;
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.719);
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+.attribution a {
+    color: hsl(75, 94%, 57%);
+}
+
+@media screen and (max-width: 375px) {
+    .image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .name {
+        font-size: 16px;
+    }
+    .location {
+        font-size: 12px;
+    }
+
+    .card{
+        margin: 0 16px;
+    }
+
+    .job{
+        font-size: 12px;
+    }
+
+    .linkses a {
+        font-size: 14px;
+    }
+
+    .attribution {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    .image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .name {
+        font-size: 14px;
+    }
+    .location {
+        font-size: 10px;
+    }
+
+    .card{
+        margin: 0 14px;
+    }
+
+    .job{
+        font-size: 10px;
+    }
+
+    .linkses a {
+        font-size: 12px;
+    }
+
+    .attribution {
+        font-size: 9px;
+    }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 768px) {
+
+    body{
+        margin-top: 100px;
+    }
+    .card{
+        margin: 10px;
+    }
+    .attribution {
+        position: static;
+    }
+}
