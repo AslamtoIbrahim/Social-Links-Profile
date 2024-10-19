@@ -4,7 +4,7 @@ body {
     padding: 0;
 }
 
-*{
+* {
     /* margin: 0px; */
 }
 
@@ -59,7 +59,7 @@ body {
 }
 
 
-.naloc{
+.naloc {
     width: 100%;
 }
 
@@ -95,7 +95,7 @@ body {
     margin: 6px 0px;
 }
 
-.linkses a:hover{
+.linkses a:hover {
     background-color: hsl(0, 0%, 8%);
     color: hsla(0, 0%, 100%, 0.904);
 
@@ -110,7 +110,7 @@ body {
     bottom: 0;
 }
 
-h1{
+h1 {
     color: hsl(0, 2%, 79%);
     position: absolute;
     top: 0;
@@ -121,6 +121,11 @@ h1{
 }
 
 @media screen and (max-width: 375px) {
+
+    h1 {
+        font-size: 20px;
+    }
+
     .image {
         width: 80px;
         height: 80px;
@@ -129,15 +134,16 @@ h1{
     .name {
         font-size: 16px;
     }
+
     .location {
         font-size: 12px;
     }
 
-    .card{
+    .card {
         margin: 0 16px;
     }
 
-    .job{
+    .job {
         font-size: 12px;
     }
 
@@ -151,6 +157,10 @@ h1{
 }
 
 @media screen and (max-width: 335px) {
+    h1 {
+        font-size: 18px;
+    }
+
     .image {
         width: 60px;
         height: 60px;
@@ -159,15 +169,16 @@ h1{
     .name {
         font-size: 14px;
     }
+
     .location {
         font-size: 10px;
     }
 
-    .card{
+    .card {
         margin: 0 14px;
     }
 
-    .job{
+    .job {
         font-size: 10px;
     }
 
@@ -182,13 +193,21 @@ h1{
 
 @media only screen and (orientation: landscape) and (max-width: 768px) {
 
-    body{
+    body {
         margin-top: 100px;
     }
-    .card{
+
+    h1 {
+        font-size: 24px;
+        position: static
+    }
+
+    .card {
         margin: 10px;
     }
+
     .attribution {
+        font-size: 24px;
         position: static;
     }
 }
